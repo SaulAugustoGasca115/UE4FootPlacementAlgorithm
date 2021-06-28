@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\FootAlgorithm.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{FE37C9D9-9EC4-436D-A092-902ED1DA5BF1}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\FootAlgorithm.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\FootAlgorithmEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{BD901973-1BB9-4CB3-9FAA-EC65FE37CAB6}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\FootAlgorithm">
+      <UniqueIdentifier>{5CCBB06B-9914-4D65-B04B-6DBE6A17A4F0}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\FootAlgorithm\FootAlgorithm.Build.cs">
+      <Filter>Source\FootAlgorithm</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\FootAlgorithm\FootAlgorithm.cpp">
+      <Filter>Source\FootAlgorithm</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FootAlgorithm\FootAlgorithm.h">
+      <Filter>Source\FootAlgorithm</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FootAlgorithm\FootAlgorithmCharacter.cpp">
+      <Filter>Source\FootAlgorithm</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FootAlgorithm\FootAlgorithmCharacter.h">
+      <Filter>Source\FootAlgorithm</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FootAlgorithm\FootAlgorithmGameMode.cpp">
+      <Filter>Source\FootAlgorithm</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FootAlgorithm\FootAlgorithmGameMode.h">
+      <Filter>Source\FootAlgorithm</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

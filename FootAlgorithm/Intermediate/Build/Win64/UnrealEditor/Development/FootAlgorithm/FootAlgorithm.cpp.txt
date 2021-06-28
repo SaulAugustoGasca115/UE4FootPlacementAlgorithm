@@ -1,0 +1,2 @@
+D:\UnrealProjects\UE5\UE4FootPlacementAlgorithm\FootAlgorithm\Intermediate\Build\Win64\UnrealEditor\Development\FootAlgorithm\Definitions.FootAlgorithm.h
+D:\UnrealProjects\UE5\UE4FootPlacementAlgorithm\FootAlgorithm\Source\FootAlgorithm\FootAlgorithm.h

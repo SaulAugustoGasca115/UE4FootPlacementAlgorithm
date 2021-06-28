@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\UnrealProjects\\UE5\\UE4FootPlacementAlgorithm\\FootAlgorithm\\Source\\FootAlgorithm\\FootAlgorithm.Build.cs",
+		"D:\\UnrealProjects\\UE5\\UE4FootPlacementAlgorithm\\FootAlgorithm\\Source\\FootAlgorithm.Target.cs",
+		"D:\\UnrealProjects\\UE5\\UE4FootPlacementAlgorithm\\FootAlgorithm\\Source\\FootAlgorithmEditor.Target.cs"
+	],
+	"EngineVersion": "5.0.0"
+}
