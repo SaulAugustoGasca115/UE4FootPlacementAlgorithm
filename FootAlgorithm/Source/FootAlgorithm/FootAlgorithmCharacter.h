@@ -96,5 +96,8 @@ private:
 	FVector InitialMeshRelativeLocation;
 
 
+
+	friend class ACharacterHUD;
+
 };
 

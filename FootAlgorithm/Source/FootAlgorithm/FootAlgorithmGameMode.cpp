@@ -3,6 +3,8 @@
 #include "FootAlgorithmGameMode.h"
 #include "FootAlgorithmCharacter.h"
 #include "UObject/ConstructorHelpers.h"
+#include "./HUD/DebugHUD.h"
+
 
 AFootAlgorithmGameMode::AFootAlgorithmGameMode()
 {
@@ -11,5 +13,9 @@ AFootAlgorithmGameMode::AFootAlgorithmGameMode()
 	if (PlayerPawnBPClass.Class != NULL)
 	{
 		DefaultPawnClass = PlayerPawnBPClass.Class;
+
+		
 	}
+
+	HUDClass = ADebugHUD::StaticClass();
 }

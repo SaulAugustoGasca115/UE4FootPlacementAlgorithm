@@ -1,0 +1,17 @@
+D:\UnrealProjects\UE5\UE4FootPlacementAlgorithm\FootAlgorithm\Intermediate\Build\Win64\UnrealEditor\Development\FootAlgorithm\Definitions.FootAlgorithm.h
+D:\UnrealProjects\UE5\UE4FootPlacementAlgorithm\FootAlgorithm\Source\FootAlgorithm\HUD\DebugHUD.h
+D:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Engine\Classes\GameFramework/HUD.h
+D:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Engine\Classes\GameFramework/HUDHitBox.h
+D:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Engine\Classes\GameFramework/DebugTextInfo.h
+D:\Program Files\Epic Games\UE_5.0EA\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Engine\DebugTextInfo.generated.h
+D:\Program Files\Epic Games\UE_5.0EA\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Engine\HUD.generated.h
+D:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Engine\Public\CanvasItem.h
+D:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Engine\Classes\Engine/Font.h
+D:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Engine\Classes\Engine/FontImportOptions.h
+D:\Program Files\Epic Games\UE_5.0EA\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Engine\FontImportOptions.generated.h
+D:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\SlateCore\Public\Fonts/FontProviderInterface.h
+D:\Program Files\Epic Games\UE_5.0EA\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\SlateCore\FontProviderInterface.generated.h
+D:\Program Files\Epic Games\UE_5.0EA\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Engine\Font.generated.h
+D:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Engine\Classes\Engine/Canvas.h
+D:\Program Files\Epic Games\UE_5.0EA\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Engine\Canvas.generated.h
+D:\UnrealProjects\UE5\UE4FootPlacementAlgorithm\FootAlgorithm\Intermediate\Build\Win64\UnrealEditor\Inc\FootAlgorithm\DebugHUD.generated.h

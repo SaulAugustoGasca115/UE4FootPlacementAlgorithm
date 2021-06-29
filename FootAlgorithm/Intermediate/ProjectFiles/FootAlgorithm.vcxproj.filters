@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\FootAlgorithm.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{FE37C9D9-9EC4-436D-A092-902ED1DA5BF1}</UniqueIdentifier>
+      <UniqueIdentifier>{03C08A34-2AC7-4E9E-831E-CC369F8393D6}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\FootAlgorithm.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{BD901973-1BB9-4CB3-9FAA-EC65FE37CAB6}</UniqueIdentifier>
+      <UniqueIdentifier>{97D4D313-380A-4B90-A468-42CA6E23D4C9}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\FootAlgorithm">
-      <UniqueIdentifier>{5CCBB06B-9914-4D65-B04B-6DBE6A17A4F0}</UniqueIdentifier>
+      <UniqueIdentifier>{195493BA-6289-44CC-AC8C-CC05BBA7A00C}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\FootAlgorithm\FootAlgorithm.Build.cs">
       <Filter>Source\FootAlgorithm</Filter>
@@ -52,6 +52,27 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\FootAlgorithm\FootAlgorithmGameMode.h">
       <Filter>Source\FootAlgorithm</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FootAlgorithm\TestPawn.cpp">
+      <Filter>Source\FootAlgorithm</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FootAlgorithm\TestPawn.h">
+      <Filter>Source\FootAlgorithm</Filter>
+    </ClInclude>
+    <Filter Include="Source\FootAlgorithm\HUD">
+      <UniqueIdentifier>{A18A01DE-AF08-4FA4-8971-21CBB832CFC3}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\FootAlgorithm\HUD\CharacterHUD.cpp">
+      <Filter>Source\FootAlgorithm\HUD</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FootAlgorithm\HUD\CharacterHUD.h">
+      <Filter>Source\FootAlgorithm\HUD</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FootAlgorithm\HUD\DebugHUD.cpp">
+      <Filter>Source\FootAlgorithm\HUD</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FootAlgorithm\HUD\DebugHUD.h">
+      <Filter>Source\FootAlgorithm\HUD</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

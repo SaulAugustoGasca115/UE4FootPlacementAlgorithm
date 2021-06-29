@@ -2,22 +2,16 @@
   operable program or batch file.
   Win64 using Manual SDK 10.0.18362.0
   Using 'git status' to determine working set for adaptive non-unity build (D:\UnrealProjects\UE5\UE4FootPlacementAlgorithm).
-  Invalidating makefile for FootAlgorithmEditor (FootAlgorithmCharacter.cpp modified)
-  Parsing headers for FootAlgorithmEditor
-    Running UnrealHeaderTool "D:\UnrealProjects\UE5\UE4FootPlacementAlgorithm\FootAlgorithm\FootAlgorithm.uproject" "D:\UnrealProjects\UE5\UE4FootPlacementAlgorithm\FootAlgorithm\Intermediate\Build\Win64\FootAlgorithmEditor\Development\FootAlgorithmEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\sgfar\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
-  Reflection code generated for FootAlgorithmEditor in 6.0097544 seconds
+  Invalidating makefile for FootAlgorithmEditor (FootAlgorithmGameMode.cpp modified)
   Building FootAlgorithmEditor...
   Using Visual Studio 2019 14.29.30038 toolchain (D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  [Adaptive Build] Excluded from FootAlgorithm unity file: FootAlgorithm.cpp, FootAlgorithmCharacter.cpp, FootAlgorithmGameMode.cpp
-  Building 7 actions with 8 processes...
-    [1/7] FootAlgorithm.init.gen.cpp
-    [2/7] FootAlgorithmCharacter.gen.cpp
-    [3/7] FootAlgorithmGameMode.cpp
-    [4/7] FootAlgorithmCharacter.cpp
-    [5/7] UnrealEditor-FootAlgorithm-0001.lib
-       Creating library D:\UnrealProjects\UE5\UE4FootPlacementAlgorithm\FootAlgorithm\Intermediate\Build\Win64\UnrealEditor\Development\FootAlgorithm\UnrealEditor-FootAlgorithm-0001.lib and object D:\UnrealProjects\UE5\UE4FootPlacementAlgorithm\FootAlgorithm\Intermediate\Build\Win64\UnrealEditor\Development\FootAlgorithm\UnrealEditor-FootAlgorithm-0001.exp
-    [6/7] UnrealEditor-FootAlgorithm-0001.dll
-       Creating library D:\UnrealProjects\UE5\UE4FootPlacementAlgorithm\FootAlgorithm\Intermediate\Build\Win64\UnrealEditor\Development\FootAlgorithm\UnrealEditor-FootAlgorithm-0001.suppressed.lib and object D:\UnrealProjects\UE5\UE4FootPlacementAlgorithm\FootAlgorithm\Intermediate\Build\Win64\UnrealEditor\Development\FootAlgorithm\UnrealEditor-FootAlgorithm-0001.suppressed.exp
-    [7/7] FootAlgorithmEditor.target
-  Total time in Parallel executor: 5.69 seconds
-  Total execution time: 14.29 seconds
+  [Adaptive Build] Excluded from FootAlgorithm unity file: CharacterHUD.cpp, DebugHUD.cpp, FootAlgorithmCharacter.cpp, FootAlgorithmGameMode.cpp, TestPawn.cpp
+  Building 4 actions with 8 processes...
+    [1/4] FootAlgorithmGameMode.cpp
+    [2/4] UnrealEditor-FootAlgorithm-0009.lib
+       Creating library D:\UnrealProjects\UE5\UE4FootPlacementAlgorithm\FootAlgorithm\Intermediate\Build\Win64\UnrealEditor\Development\FootAlgorithm\UnrealEditor-FootAlgorithm-0009.lib and object D:\UnrealProjects\UE5\UE4FootPlacementAlgorithm\FootAlgorithm\Intermediate\Build\Win64\UnrealEditor\Development\FootAlgorithm\UnrealEditor-FootAlgorithm-0009.exp
+    [3/4] UnrealEditor-FootAlgorithm-0009.dll
+       Creating library D:\UnrealProjects\UE5\UE4FootPlacementAlgorithm\FootAlgorithm\Intermediate\Build\Win64\UnrealEditor\Development\FootAlgorithm\UnrealEditor-FootAlgorithm-0009.suppressed.lib and object D:\UnrealProjects\UE5\UE4FootPlacementAlgorithm\FootAlgorithm\Intermediate\Build\Win64\UnrealEditor\Development\FootAlgorithm\UnrealEditor-FootAlgorithm-0009.suppressed.exp
+    [4/4] FootAlgorithmEditor.target
+  Total time in Parallel executor: 4.85 seconds
+  Total execution time: 7.88 seconds
