@@ -25,6 +25,11 @@ public:
 		RenderStatistics(title,value);
 	}
 
+	void AddName(const TCHAR* title, const FName value)
+	{
+		RenderStatistics(title,FText::FromName(value));
+	}
+
 	void AddInt(const TCHAR* title,int32 value)
 	{
 		RenderStatistics(title,FText::AsNumber(value),(value <= 0) ? FLinearColor::Red : FLinearColor::Yellow);
@@ -46,7 +51,7 @@ public:
 	}
 
 
-	float horizontalOffset = 150.0f;
+	float horizontalOffset = 190.0f;
 
 private:
 	
@@ -54,6 +59,12 @@ private:
 	{
 		return FText::FromString(text);
 	}
+
+	/*FName ConvertStringToName(const TCHAR* text)
+	{
+		return FText::FromName(text);
+	}*/
+
 
 
 	FText ConvertBoolToText(bool value)

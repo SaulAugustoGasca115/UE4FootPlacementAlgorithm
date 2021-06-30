@@ -18,6 +18,13 @@ void ACharacterHUD::DrawHUD()
 		AddFloat(L"Mesh Location Y: ", character->InitialMeshRelativeLocation.Y);
 		AddFloat(L"Mesh Location Z: ", character->InitialMeshRelativeLocation.Z);
 		//AddFloat(L"Mesh Location X: ", character->TestNumber);
+
+		AddFloat(L"Left Foot Location X: ",character->LeftFootBoneRelativeLocation.X);
+		AddFloat(L"Left Foot Location Y: ", character->LeftFootBoneRelativeLocation.Y);
+
+		AddName(L"Left Foot Bone Name: ",character->LeftFootBoneName);
+		AddName(L"Right Foot Bone Name: ", character->RightFootBoneName);
+
 	}
 
 }

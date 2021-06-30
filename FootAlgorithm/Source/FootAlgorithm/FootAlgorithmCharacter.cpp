@@ -8,6 +8,8 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "Components/SkeletalMeshComponent.h"
+#include "Kismet/KismetSystemLibrary.h"
 
 //////////////////////////////////////////////////////////////////////////
 // AFootAlgorithmCharacter
@@ -56,6 +58,43 @@ AFootAlgorithmCharacter::AFootAlgorithmCharacter()
 void AFootAlgorithmCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+
+	//Get the skeletal mesh to get the foot bones location
+	if (GetMesh()->SkeletalMesh)
+	{
+		const FVector LeftFootBoneWorldLocation = GetMesh()->GetBoneLocation(LeftFootBoneName);
+		LeftFootBoneRelativeLocation = GetActorTransform().InverseTransformPosition(LeftFootBoneWorldLocation);
+
+		const FVector RightFootBoneWorldLocation = GetMesh()->GetBoneLocation(RightFootBoneName);
+		RightFootBoneRelativeLocation = GetActorTransform().InverseTransformPosition(RightFootBoneWorldLocation);
+
+		InitialMeshRelativeLocation = GetMesh()->GetRelativeTransform().GetLocation();
+	}
+
+}
+
+void AFootAlgorithmCharacter::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+	
+
+	if (GetVelocity().Size() == 0)
+	{
+		TArray<AActor*> ActorsToIgnore;
+
+		FHitResult LeftTraceHit;
+		const FVector LeftFootLocation = GetTransform().TransformPosition(LeftFootBoneRelativeLocation);
+		bool bLeftFootTraceHit = UKismetSystemLibrary::SphereTraceSingle(this, LeftFootLocation + FVector(0.0f, 0.0f, 50.0f), LeftFootLocation + FVector(0.0f, 0.0f, -100.0f),
+																		10.0f,ETraceTypeQuery::TraceTypeQuery1,false, ActorsToIgnore,EDrawDebugTrace::ForOneFrame,LeftTraceHit,true);
+
+		
+		FHitResult RightTraceHit;
+		const FVector RightFootLocation = GetTransform().TransformPosition(RightFootBoneRelativeLocation);
+		bool bRightFootTraceHit = UKismetSystemLibrary::SphereTraceSingle(this, RightFootLocation + FVector(0.0f, 0.0f, 50.0f), RightFootLocation + FVector(0.0f, 0.0f, -100.0f),
+			10.0f, ETraceTypeQuery::TraceTypeQuery1, false, ActorsToIgnore, EDrawDebugTrace::ForOneFrame, RightTraceHit, true);
+
+	}
 }
 
 void AFootAlgorithmCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
