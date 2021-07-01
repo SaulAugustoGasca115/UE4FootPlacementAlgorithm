@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\FootAlgorithm.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{03C08A34-2AC7-4E9E-831E-CC369F8393D6}</UniqueIdentifier>
+      <UniqueIdentifier>{FB77A104-BFF9-4236-8A7B-59080581D08E}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\FootAlgorithm.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{97D4D313-380A-4B90-A468-42CA6E23D4C9}</UniqueIdentifier>
+      <UniqueIdentifier>{20F82EB7-164B-4261-BEDA-8DA6778B9EAA}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\FootAlgorithm">
-      <UniqueIdentifier>{195493BA-6289-44CC-AC8C-CC05BBA7A00C}</UniqueIdentifier>
+      <UniqueIdentifier>{93EC3321-F6CE-4F0D-A175-27E4176962A4}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\FootAlgorithm\FootAlgorithm.Build.cs">
       <Filter>Source\FootAlgorithm</Filter>
@@ -59,8 +59,17 @@
     <ClInclude Include="..\..\Source\FootAlgorithm\TestPawn.h">
       <Filter>Source\FootAlgorithm</Filter>
     </ClInclude>
+    <Filter Include="Source\FootAlgorithm\Animations">
+      <UniqueIdentifier>{99E9A207-D632-4F2C-904A-09CF8BCD7AA6}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\FootAlgorithm\Animations\FootPlacementAnimInstance.cpp">
+      <Filter>Source\FootAlgorithm\Animations</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FootAlgorithm\Animations\FootPlacementAnimInstance.h">
+      <Filter>Source\FootAlgorithm\Animations</Filter>
+    </ClInclude>
     <Filter Include="Source\FootAlgorithm\HUD">
-      <UniqueIdentifier>{A18A01DE-AF08-4FA4-8971-21CBB832CFC3}</UniqueIdentifier>
+      <UniqueIdentifier>{B2217E6F-B6FC-4BDF-985B-54ED9F03EFCA}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FootAlgorithm\HUD\CharacterHUD.cpp">
       <Filter>Source\FootAlgorithm\HUD</Filter>

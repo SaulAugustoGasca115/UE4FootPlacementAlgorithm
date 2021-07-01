@@ -21,8 +21,8 @@ void EmptyLinkFunctionForGeneratedCodeFootAlgorithm_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x13B8C0DB,
-				0x5DA5D278,
+				0x4D487D95,
+				0x34B5694C,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UECodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

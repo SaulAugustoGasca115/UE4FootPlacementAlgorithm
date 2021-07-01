@@ -43,3 +43,5 @@ D:\Program Files\Epic Games\UE_5.0EA\Engine\Intermediate\Build\Win64\UnrealEdito
 D:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\Engine\Classes\Kismet/KismetSystemLibrary.h
 D:\Program Files\Epic Games\UE_5.0EA\Engine\Source\Runtime\CoreUObject\Public\UObject/PropertyAccessUtil.h
 D:\Program Files\Epic Games\UE_5.0EA\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Engine\KismetSystemLibrary.generated.h
+D:\UnrealProjects\UE5\UE4FootPlacementAlgorithm\FootAlgorithm\Source\FootAlgorithm\./Animations/FootPlacementAnimInstance.h
+D:\UnrealProjects\UE5\UE4FootPlacementAlgorithm\FootAlgorithm\Intermediate\Build\Win64\UnrealEditor\Inc\FootAlgorithm\FootPlacementAnimInstance.generated.h

@@ -10,6 +10,7 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "Kismet/KismetSystemLibrary.h"
+#include "./Animations/FootPlacementAnimInstance.h"
 
 //////////////////////////////////////////////////////////////////////////
 // AFootAlgorithmCharacter
@@ -77,7 +78,12 @@ void AFootAlgorithmCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	
+	UFootPlacementAnimInstance* FPAnimation = Cast<UFootPlacementAnimInstance>(GetMesh()->GetAnimInstance());
+
+	if (!FPAnimation)
+	{
+		return;
+	}
 
 	if (GetVelocity().Size() == 0)
 	{
@@ -94,6 +100,38 @@ void AFootAlgorithmCharacter::Tick(float DeltaTime)
 		bool bRightFootTraceHit = UKismetSystemLibrary::SphereTraceSingle(this, RightFootLocation + FVector(0.0f, 0.0f, 50.0f), RightFootLocation + FVector(0.0f, 0.0f, -100.0f),
 			10.0f, ETraceTypeQuery::TraceTypeQuery1, false, ActorsToIgnore, EDrawDebugTrace::ForOneFrame, RightTraceHit, true);
 
+
+		float zOffset = 0.0f;
+
+		if (LeftTraceHit.ImpactPoint.Z < RightTraceHit.ImpactPoint.Z)
+		{
+			zOffset = LeftFootLocation.Z - LeftTraceHit.ImpactPoint.Z;
+
+			//animation isntance values
+			FPAnimation->SetRightEffectorLocation(RightTraceHit.ImpactPoint + FVector(0.0f,0.0f,13.0f));
+			FPAnimation->SetLeftFootAlpha(0.0f);
+			FPAnimation->SetRightFootAlpha(1.0f);
+		}
+		else 
+		{
+			zOffset = RightFootLocation.Z - RightTraceHit.ImpactPoint.Z;
+
+			//animation isntance values
+			FPAnimation->SetLeftEffectorLocation(LeftTraceHit.ImpactPoint + FVector(0.0f, 0.0f, 13.0f));
+			FPAnimation->SetLeftFootAlpha(1.0f);
+			FPAnimation->SetRightFootAlpha(0.0f);
+		}
+
+		GetMesh()->SetRelativeLocation(InitialMeshRelativeLocation + FVector(0.0f,0.0f,-zOffset + 13.0f));
+
+	}
+	else
+	{
+		GetMesh()->SetRelativeLocation(InitialMeshRelativeLocation);
+
+		//animation instance values
+		FPAnimation->SetLeftFootAlpha(0.0f);
+		FPAnimation->SetRightFootAlpha(0.0f);
 	}
 }
 
